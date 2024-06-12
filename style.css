@@ -1,0 +1,221 @@
+    @font-face {
+        font-family: 'norsebold';
+        src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+            url('fonts/norse-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: 'fira_sansregular';
+        src: url('fonts/firasans-regular-webfont.woff2') format('woff2'),
+            url('fonts/firasans-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+
+    @font-face {
+        font-family: 'fira_sanssemibold';
+        src: url('fonts/firasans-semibold-webfont.woff2') format('woff2'),
+            url('fonts/firasans-semibold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container, .top, .form, .bottom{
+        font-family: inherit;
+        font-size: 100%;
+    }
+
+    .container{
+    display: flex;
+
+    }
+
+    .img{
+    
+    width: clamp(50%, 400px, 100%);
+    height: 113vh;
+    background-image: url(img/background.avif);
+    background-size: cover;
+    display: flex;
+    padding-top: 6.8%;
+    min-width: 300px;
+    }
+    .text{
+    
+        width: 60%;
+        height: 100%;
+    
+
+    }
+
+    html, body {
+        height: 100%;
+        overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    }
+
+    .logo_div{
+        justify-content: center ;
+        align-items: center;
+        display: flex;
+        font-size: 6rem;
+        color: white;
+        font-family: 'norsebold';
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 150px;
+        width: 100%;
+
+    }
+
+    #logo{
+
+        height: 110px;
+        width: 90px;
+    }
+
+
+    .top{
+        
+        display: flex;
+
+        align-items: center;
+        background-color: #f9fafb;
+        height: 37%; 
+        font-size: clamp(1rem, 5vw, 1.5rem);
+
+    }
+
+    .info{
+        padding-left: 5%;
+        padding-right: 15%;
+        font-size: clamp(0.5rem, 3vw, 1.8rem);
+        font-weight: 600;
+        margin-bottom: 6%;
+        font-family: 'Poppins', sans-serif;
+        
+
+    }
+
+    span{
+        font-style: italic;
+    }
+
+    h2{
+        margin-left: 6%;
+        padding: 17px;
+        font-family: 'Poppins', sans-serif;
+        font-size: clamp(0.5rem, 3vw, 1.8rem);
+        display: block;
+    }
+    form{
+            font-family: 'fira_sansregular';
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            display: flex;  
+            height: 275px   ;
+            width:  700px;
+            margin-left: 8.5%;
+            width: 100%;
+            gap: 10%;
+            flex-wrap: wrap;
+            box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .left_side{
+    
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 80%;
+
+    }
+
+    .right_side{
+    
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 80%;
+    }
+    .form{
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);    
+
+
+
+    }
+
+    .bottom{
+        font-family: 'fira_sansregular';
+        padding-top: 20px;
+        padding-left: 70px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: #f9fafb;
+        height: 170px; 
+        width: 100%;
+        gap :20px
+    }
+
+    button{
+        font-family: 'fira_sansregular';
+        height: 40px;
+        width: 150px;
+        background-color: #596D48;
+        border-radius: 5px;
+        border: none;
+        color: white;
+    
+
+    }
+
+    input{
+        padding: 0 15px;
+        width: 28ch;
+        height: 2.2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        border-radius: 5px;
+        border: 2px solid #E5E7EB;
+        outline: none;
+        margin-bottom: 6%;
+    }
+
+    #log{
+        color: #596D48;
+        font-style: normal;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus,
+    input[type="tel"]:focus{
+    border-color: blue;
+    outline: none;
+    }
+
+    input:required:user-invalid {
+        border: 1px solid red;
+    }
+
+    input[type="text"]:valid,
+    input[type="email"]:valid,
+    input[type="password"]:valid,
+    input[type="tel"]:valid{
+    border-color: green;
+    outline: none;
+}
+#login{
+    font-size: 1em;
+}

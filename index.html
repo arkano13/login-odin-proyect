@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <div class="logo_div"><img src="img/odinLogo.png" alt="odinproyect logo" id="logo">
+                 ODIN
+            </div>
+        </div>
+        <div class="text">
+        <div class="top">
+            <div class="info">
+                <div>This is not  real online service! you know you need something  <br> like  this in your life yo help realize
+                    your deepest dreams. <br>Sing up <span>now</span> to get started.
+            <br>
+            <br>
+
+               you <span>know</span> you want to.</div>
+            </div>
+        </div>
+        <div class="form">
+        <h2>Let's do this! </h2>
+       
+                <form action="">    
+
+                <div class="left_side">
+                
+                    <label for="name">FIRST NAME</label>
+                    <input type="text" pattern="^[^0-9]+$" name="user_firstname" id="name" placeholder="Odin"   required>
+                    <br>
+                    <br>
+                        
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="user_email" id="email" placeholder="example@gmail.com" required>
+                    <br>
+                    <br>
+
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="user_password" id="password" required>  
+               </div>
+                
+                
+               
+             <div class="right_side">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="user_lastname" id="lastname" placeholder="Odinson"  pattern="[^\d]*"  required>
+                    <br>
+                    <br>
+                        
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="tel" name="user_number" id="number" placeholder="xxxx-xxxx"  minlength="8" maxlength="8" required>
+
+                    <br>
+                    <br>
+   
+                    <label for="cpassword">CONFIRM PASSWORD</label>
+                    <input type="password"  id="cpassword" required >
+                
+           
+                </div>
+                </form>
+            </div>
+            <div class="bottom">
+                <button class="submit-btn" type="submit">Create Account</button>
+                <label id="login">already have a account?  <span id="log"> log in </span> </label>  
+
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
